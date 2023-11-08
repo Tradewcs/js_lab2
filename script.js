@@ -3,10 +3,9 @@ const passwordList = document.getElementById("passwordList");
 const dialog = document.getElementById("dialog");
 
 let passwords = [
-    {username: "user1", password: "admin123"},
+    // {username: "user1", password: "admin123"},
 ];
 
-localStorage.setItem("passwords", JSON.stringify(passwords));
 const passwordsFromLocalStorate = JSON.parse(localStorage.getItem("passwords"));
 
 if (passwordsFromLocalStorate) {
